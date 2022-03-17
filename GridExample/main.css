@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed';
+}
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    src: url(Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
+}
+
+:root{
+    /* primate */
+    --violet: hsl(263, 55%, 52%);
+    --grayish: hsl(217, 19%, 35%);
+    --blackish: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    /* natural */
+    /* pp border */
+    --n-gray: hsl(0, 0%, 81%);
+    /* body bg */
+    --n-grayish: hsl(210, 46%, 95%);
+}
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+body{
+    background-color: var(--n-grayish);
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin: 100px 0px;
+    width: 80%;
+    display: grid;
+    grid-template: auto / repeat(4, 1fr);
+    grid-template-areas: 
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+    grid-gap: 25px 25px;
+}
+.box{
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile img{
+    width: 32px;
+    height: 32px;
+    border: 3px var(--n-gray) solid;
+    border-radius: 50px;
+}
+.name{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h2{
+    font-size: 14px;
+    font-weight: 400;
+}
+h3{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 50%;
+}
+.bold{
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.bold::before{
+    content: "yiğithan";
+}
+.bold::first-line{
+    color: aqua;
+}
+.thin{
+    font-size: 14px;
+    opacity: 70%;
+    line-height: 20px;
+}
+
+.c-light{
+    color: var(--n-grayish);
+}
+.c-dark{
+    color: var(--grayish);
+}
+
+.daniel{
+    grid-area: daniel;
+    background-color: var(--violet);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0px;
+    background-size: 130px;
+}
+.jonathan{
+    grid-area: jonathan;
+    background-color: var(--grayish);
+}
+.jeanette{
+    grid-area: jeanette;
+    background-color: var(--white);
+}
+.patrick{
+    grid-area: patrick;
+    background-color: var(--blackish);
+}
+.kira{
+    grid-area: kira;
+    background-color: var(--white);
+}
+
+@media (max-width: 880px){
+    .container{
+        margin: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px){
+    .thin{
+        font-size: 12px;
+    }
+}
