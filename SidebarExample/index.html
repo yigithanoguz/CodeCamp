@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="header">
+            <div class="logo">
+                <i class='bx bxl-c-plus-plus'></i>
+                <h1>CodingLab</h1>
+            </div>
+            <span id="menu-btn">
+                <i class='bx bx-menu'></i>
+            </span>
+        </div>
+        <div class="link">
+            <ul>
+                <li>
+                    <div id="search" class="color-white">
+                        <i class='bx bx-search' ></i>
+                        <input class="color-white" type="text" placeholder="Search...">
+                    </div>
+                    <div class="mini-sidebar__link__hover">Search</div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-grid-alt' ></i>
+                        <span class="link__a__span">Dashboard</span>
+                    </a>
+                    <div class="mini-sidebar__link__hover">Dashboard</div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-user' ></i>
+                        <span class="link__a__span">User</span>
+                    </a>
+                    <div class="mini-sidebar__link__hover">User</div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-chat' ></i>
+                        <span class="link__a__span">Messages</span>
+                    </a>
+                    <div class="mini-sidebar__link__hover">Messages</div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-pie-chart-alt-2' ></i>
+                        <span class="link__a__span">Analytics</span>
+                    </a>
+                    <div class="mini-sidebar__link__hover">Analytics</div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-folder' ></i>
+                        <span class="link__a__span">File Manager</span>
+                    </a>
+                    <div class="mini-sidebar__link__hover">Files</div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cart-alt' ></i>
+                        <span class="link__a__span">Order</span>
+                    </a>
+                    <div class="mini-sidebar__link__hover">Order</div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-heart' ></i>
+                        <span class="link__a__span">Saved</span>
+                    </a>
+                    <div class="mini-sidebar__link__hover">Saved</div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cog' ></i>
+                        <span class="link__a__span">Settings</span>
+                    </a>
+                    <div class="mini-sidebar__link__hover">Settings</div>
+                </li>
+            </ul>
+        </div>
+        <div class="profile">
+            <div class="profile-info">
+                <img src="images/yigithan.jpg" alt="Admin">
+                <div class="profile-info__text color-white">
+                    <span class="name">Yiğithan Oğuz</span>
+                    <span class="job">Web Designer</span>
+                </div>
+            </div>
+            <i id="logout" class='bx bx-log-out color-white' ></i>
+        </div>
+    </div>
+
+    <div class="content">
+        <div>
+            Home Content
+        </div>
+        <button id="theme-btn" style="position: absolute; top: 10px; right: 10px; cursor: pointer;">Theme Change</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
