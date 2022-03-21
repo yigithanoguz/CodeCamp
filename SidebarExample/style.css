@@ -69,7 +69,7 @@ i {
     border-radius: 16px;
 }
 
-.sidebar .header {
+.sidebar header {
     height: 70px;
     display: flex;
     align-items: center;
@@ -77,18 +77,18 @@ i {
     color: var(--white);
 }
 
-.sidebar .header .logo {
+.sidebar header .logo {
     display: flex;
     user-select: none;
 }
 
-.sidebar .header .logo h1 {
+.sidebar header .logo h1 {
     margin-left: 5px;
     font-size: 24px;
     font-weight: 400;
 }
 
-.sidebar .header .logo i {
+.sidebar header .logo i {
     font-size: 2.5em;
     font-weight: 400;
 }
