@@ -93,12 +93,12 @@ i {
     font-weight: 400;
 }
 
-#search {
+.sidebar .link ul li .search {
     background-color: var(--purple);
 }
 
 .sidebar .link ul li a,
-#search {
+.sidebar .link ul li .search {
     height: 100%;
     margin: 4px 0;
     border-radius: 16px;
@@ -112,7 +112,7 @@ i {
 }
 
 .sidebar .link ul li a:hover,
-#search i:hover {
+.sidebar .link ul li .search i:hover {
     color: var(--black);
     background-color: var(--white);
 }
@@ -121,7 +121,7 @@ i {
     margin-left: 2px;
 }
 
-#search input {
+.sidebar .link ul li .search input {
     height: 40px;
     padding: 2px;
     background-color: transparent;
