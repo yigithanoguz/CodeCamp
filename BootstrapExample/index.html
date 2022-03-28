@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .background {
+            background-image: url('images/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        .height-350 {
+            height: 350px;
+        }
+        main > section > section > article > img {
+            width: 500px;
+        }
+        main > section > section > article {
+            height: 100%;
+        }
+        .color-btn {
+            width: 20px;
+            height: 20px;
+        }
+        .sm-img {
+            width: 100px;
+        }
+        .phones img {
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <main class="">
+        <header class="container">
+            <nav class="navbar border-bottom">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link py-0 px-2 ps-0" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link py-0 px-2" href="#">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link py-0 px-2" href="#">Help Desk</a></li>
+                    <li class="nav-item"><a class="nav-link py-0 px-2" href="#">Login</a></li>
+                </ul>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link py-0 px-2" href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li class="nav-item"><a class="nav-link py-0 px-2" href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li class="nav-item"><a class="nav-link py-0 px-2" href="#"><i class="bi bi-linkedin"></i></a></li>
+                    <li class="nav-item"><a class="nav-link py-0 px-2 pe-0" href="#"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </nav>
+            <nav class="navbar">
+                <a class="d-flex align-items-center btn p-0">
+                    <span><i class="bi bi-apple fs-1"></i></span>
+                    <h1 class="m-0 fs-2 px-2">Sublime</h1>
+                </a>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link dropdown-toggle py-0 px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a></li>
+                    <li class="nav-item"><a class="nav-link py-0 px-3" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link py-0 px-3" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link py-0 px-3" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link py-0 px-3" href="#">Work</a></li>
+                    <li class="nav-item"><a class="nav-link py-0 px-3" href="#">News</a></li>
+                </ul>
+                <form>
+                    <span class="btn"><i class="bi bi-search"></i></span>
+                    <span class="btn"><i class="bi bi-cart"></i></span>
+                    <input class="btn btn-primary rounded-pill px-5" type="submit" value="Contact">
+                </form>
+            </nav>
+        </header>
+        <section>
+            <section class="background">
+                <section class="height-350 container d-flex flex-column justify-content-center align-items-center">
+                    <span class="fs-2 fw-bold">The best electronic store in New York</span>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="nav-link p-0" href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                    </nav>
+                </section>
+            </section>
+            <section class="row container m-auto">
+                <article class="col">
+                    <img src="images/pixel4a.jpg" alt="Phone photo">
+                </article>
+                <article class="col pt-5 d-flex-column align-items-between">
+                    <div class="fs-4 fw-bold">Google Pixel 4a</div>
+                    <div>
+                        <span><i class="bi bi-star-fill"></i></span>
+                        <span>4.9 / 10 Reviews</span>
+                    </div>
+                    <div class="fs-5 fw-bold">$499</div>
+                    <div class="small my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium odio quos temporibus vel iure, nulla iste accusamus sapiente. Officia consequuntur sint recusandae rem optio. Dolor reprehenderit architecto voluptates voluptate nam expedita totam corporis eos quas id, temporibus dolorum deserunt tempore soluta assumenda tempora dicta! Hic odio dignissimos tempore incidunt.</div>
+                    <div class="d-flex">
+                        <span class="rounded-circle color-btn bg-primary m-1 border border-3 border-secondary"></span>
+                        <span class="rounded-circle color-btn bg-secondary m-1"></span>
+                        <span class="rounded-circle color-btn bg-success m-1"></span>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <input type="number" class="border border-primary border-3 col-3 rounded-start text-center">
+                        <button type="button" class="btn btn-primary">Add to card</button>
+                      </div>
+                </article>
+                <article class="row">
+                    <img class="sm-img" src="images/pixel4a.jpg" alt="Phone photo">
+                    <img class="sm-img" src="images/pixel4a.jpg" alt="Phone photo">
+                </article>
+            </section>
+            <section>
+                <div class="d-flex justify-content-center border-bottom">
+                    <a class="p-3 border-bottom border-3 nav-link border-primary" href="#">Description</a>
+                    <a class="p-3 nav-link" href="#">Additional Information</a>
+                    <a class="p-3 nav-link" href="#">Reviews</a>
+                </div>
+            </section>
+            <section class="background">
+                <section class="height-350 container d-flex flex-column justify-content-center align-items-center">
+                    <span class="fs-4 fw-bold">Releated Products</span>
+                    <div class="row phones">
+                        <div class="col">
+                            <div class="row">
+                                <img src="images/pixel4a.jpg" alt="phone">
+                            </div>
+                            <div class="row">
+                                <div>Technology</div>
+                                <div>Pixel 5 with G50</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <img src="images/pixel4a.jpg" alt="phone">
+                            </div>
+                            <div class="row">
+                                <div>Technology</div>
+                                <div>Pixel 5 with G50</div>
+                            </div>
+                        </div><div class="col">
+                            <div class="row">
+                                <img src="images/pixel4a.jpg" alt="phone">
+                            </div>
+                            <div class="row">
+                                <div>Technology</div>
+                                <div>Pixel 5 with G50</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+    
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
